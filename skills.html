@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skills</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav {
+            background-color: #2D3833;
+            padding: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #555;
+            margin: 0;
+        }
+
+        .skills-section {
+            max-width: 1000px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .skill-box {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.2);
+        }
+
+        .skill-box h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 5px;
+        }
+
+        .skill-bar {
+            background-color: #444;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 15px;
+            margin-top: 10px;
+        }
+
+        .skill-level {
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .python { width: 80%; background-color: #61dafb; }
+        .bash { width: 70%; background-color: #f0db4f; }
+        .websecurity { width: 85%; background-color: #ff4c4c; }
+        .networking { width: 75%; background-color: #4caf50; }
+        .tools { width: 80%; background-color: #ff9800; }
+        .problem-solving { width: 90%; background-color: #9c27b0; }
+
+        .skill-description {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: left;
+        }
+
+        @media screen and (max-width: 500px) {
+            .skill-box h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="achivements.html">Achievements</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <section class="skills-section">
+        <div class="skill-box">
+            <h3>Python</h3>
+            <div class="skill-bar"><div class="skill-level python"></div></div>
+            <div class="skill-description">
+                Used for scripting automation tasks, penetration testing, and small security tools.
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <h3>Bash & Linux</h3>
+            <div class="skill-bar"><div class="skill-level bash"></div></div>
+            <div class="skill-description">
+                Experienced with command-line tools, shell scripting, and server management.
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <h3>Web Security</h3>
+            <div class="skill-bar"><div class="skill-level websecurity"></div></div>
+            <div class="skill-description">
+                Knowledge of XSS, SQLi, CSRF, and practical application in safe lab environments.
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <h3>Networking</h3>
+            <div class="skill-bar"><div class="skill-level networking"></div></div>
+            <div class="skill-description">
+                Understanding TCP/IP, HTTP/HTTPS, DNS, and network scanning with Wireshark/Nmap.
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <h3>Tools & Platforms</h3>
+            <div class="skill-bar"><div class="skill-level tools"></div></div>
+            <div class="skill-description">
+                Hack The Box, TryHackMe, Burp Suite, PortSwigger Academy, and CTF challenges.
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <h3>Problem Solving</h3>
+            <div class="skill-bar"><div class="skill-level problem-solving"></div></div>
+            <div class="skill-description">
+                Critical thinking, logical analysis, and systematic approach to vulnerability assessment.
+            </div>
+        </div>
+    </section>
+</body>
+</html>
